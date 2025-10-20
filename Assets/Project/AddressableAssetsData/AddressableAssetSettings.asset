@@ -15,7 +15,7 @@ MonoBehaviour:
   m_DefaultGroup: e4472a755e9a4174894bb9b65e795c5b
   m_currentHash:
     serializedVersion: 2
-    Hash: 00000000000000000000000000000000
+    Hash: 0009735407172736a046a1b497086851
   m_OptimizeCatalogSize: 0
   m_BuildRemoteCatalog: 0
   m_CatalogRequestsTimeout: 0
@@ -24,11 +24,11 @@ MonoBehaviour:
   m_InternalBundleIdMode: 1
   m_AssetLoadMode: 0
   m_BundledAssetProviderType:
-    m_AssemblyName: 
-    m_ClassName: 
+    m_AssemblyName: Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.BundledAssetProvider
   m_AssetBundleProviderType:
-    m_AssemblyName: 
-    m_ClassName: 
+    m_AssemblyName: Unity.ResourceManager, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
+    m_ClassName: UnityEngine.ResourceManagement.ResourceProviders.AssetBundleProvider
   m_IgnoreUnsupportedFilesInBuild: 0
   m_UniqueBundleIds: 0
   m_EnableJsonCatalog: 0
@@ -62,10 +62,14 @@ MonoBehaviour:
   m_GroupAssets:
   - {fileID: 11400000, guid: 5070159676cd7254fb65e96a6b9f9ec4, type: 2}
   - {fileID: 11400000, guid: ac79c349e3cfaee47813741bc5a000a4, type: 2}
+  - {fileID: 11400000, guid: 12756862c2380f0478ed371fa9c61911, type: 2}
   - {fileID: 11400000, guid: 03894efe29636e5449a50942e21ead8a, type: 2}
   - {fileID: 11400000, guid: e3d3bf09d57930b46b384f1edb2de5e2, type: 2}
   - {fileID: 11400000, guid: 99cb2f1646b64de46a67816cfe33ed36, type: 2}
+  - {fileID: 11400000, guid: 604777cd30d61924b97e23221c4ff561, type: 2}
   - {fileID: 11400000, guid: 0347828e2df936842bd7f06ecdc0026d, type: 2}
+  - {fileID: 11400000, guid: 985dcdd36a66f7f41a0dc9052391af21, type: 2}
+  - {fileID: 11400000, guid: 2d4dfc78555c2354dba31afabbc0c2bf, type: 2}
   - {fileID: 11400000, guid: ea88591bfbeb36c4681c452984c14980, type: 2}
   m_BuildSettings:
     m_LogResourceManagerExceptions: 1
@@ -106,6 +110,9 @@ MonoBehaviour:
   m_LabelTable:
     m_LabelNames:
     - default
+    - Locale
+    - Locale-ru
+    - Locale-en
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 0361299e9e99aee4989468f3e9f28103, type: 2}
