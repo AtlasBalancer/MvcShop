@@ -1,0 +1,12 @@
+using System.Collections.Generic;
+using R3;
+
+namespace com.ab.mvcshop.modules.shop.model
+{
+    public interface IShopService 
+    {
+        List<Bundle> GetBundles();
+        Observable<Unit> ModelChanged { get; }
+        void BuyBundle(Bundle bundle);
+    }
+}
