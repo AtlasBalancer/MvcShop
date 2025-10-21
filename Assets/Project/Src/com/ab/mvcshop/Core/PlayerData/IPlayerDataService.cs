@@ -1,4 +1,4 @@
-using Project.Src.com.ab.mvcshop.Core.Mvc;
+using com.ab.mvcshop.core.mvc;
 
 namespace com.ab.mvcshop.core.playerdata
 {

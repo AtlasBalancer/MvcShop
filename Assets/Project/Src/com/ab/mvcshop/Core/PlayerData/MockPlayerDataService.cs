@@ -1,7 +1,7 @@
 using System;
 using UnityEngine;
 using System.Collections.Generic;
-using Project.Src.com.ab.mvcshop.Core.Mvc;
+using com.ab.mvcshop.core.mvc;
 
 namespace com.ab.mvcshop.core.playerdata
 {
@@ -10,10 +10,13 @@ namespace com.ab.mvcshop.core.playerdata
         readonly string _keyPersistentPattern;
         const string PERSISTEN_SYFIX = "MockData";
 
-        public MockPlayerDataService(Settings settings) =>
+        public MockPlayerDataService(Settings settings)
+        {
             _keyPersistentPattern = $"{PERSISTEN_SYFIX}_{settings.PersistentDataVersion}_";
+        }
 
         Dictionary<Type, IModel> _storage = new();
+
 
         public void Init<TModel>(bool rewerite = false) where TModel : IModel
         {
@@ -58,10 +61,13 @@ namespace com.ab.mvcshop.core.playerdata
         string GetPersistKey(Type t) =>
             $"{_keyPersistentPattern}{t.Name}";
 
+        
         [Serializable]
         public class Settings
         {
             public string PersistentDataVersion;
         }
+
     }
+
 }
