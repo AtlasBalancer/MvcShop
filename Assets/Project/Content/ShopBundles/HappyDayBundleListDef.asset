@@ -13,5 +13,8 @@ MonoBehaviour:
   m_Name: HappyDayBundleListDef
   m_EditorClassIdentifier: Assembly-CSharp::com.ab.mvcshop.modules.shop.definition.BundlesSo
   Bundles:
-  - {fileID: 11400000, guid: 976160cb90bd75648b74dee15ea322bb, type: 2}
+  - {fileID: 11400000, guid: 1fff8574921a62c4aac51f16c7be85c1, type: 2}
+  - {fileID: 11400000, guid: 8cd22acdb01e15a4d8e9fa5f80d1472a, type: 2}
   - {fileID: 11400000, guid: d82e400f2f57da04697eea2736d13f69, type: 2}
+  - {fileID: 11400000, guid: 976160cb90bd75648b74dee15ea322bb, type: 2}
+  - {fileID: 11400000, guid: 73bfe8aaab2198c4ca7db4fea27fdfac, type: 2}
