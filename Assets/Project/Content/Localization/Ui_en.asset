@@ -22,6 +22,26 @@ MonoBehaviour:
     m_Localized: 'Gold:'
     m_Metadata:
       m_Items: []
+  - m_Id: 276832533323776
+    m_Localized: Gold for health
+    m_Metadata:
+      m_Items: []
+  - m_Id: 273642903543808
+    m_Localized: Buy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364851848257536
+    m_Localized: Not enough resources
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409469839187968
+    m_Localized: 'Health:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 415880912543744
+    m_Localized: Health for gold
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

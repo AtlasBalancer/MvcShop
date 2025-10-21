@@ -16,7 +16,27 @@ MonoBehaviour:
   m_TableCollectionNameGuidString: c17863f2c9afc7444be7e235eda22417
   m_Entries:
   - m_Id: 60956844032
-    m_Key: Shop.GoldLabel
+    m_Key: shop.gold.label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409469839187968
+    m_Key: shop.health.label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 273642903543808
+    m_Key: bundle.button.buy
+    m_Metadata:
+      m_Items: []
+  - m_Id: 276832533323776
+    m_Key: bundle.message.goldforhealth
+    m_Metadata:
+      m_Items: []
+  - m_Id: 364851848257536
+    m_Key: bundle.lable.notenoughresource
+    m_Metadata:
+      m_Items: []
+  - m_Id: 415880912543744
+    m_Key: bundle.message.healthforgold
     m_Metadata:
       m_Items: []
   m_Metadata:
