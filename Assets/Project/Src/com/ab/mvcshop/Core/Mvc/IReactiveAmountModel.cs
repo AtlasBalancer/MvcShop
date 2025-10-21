@@ -1,6 +1,6 @@
 using System;
 
-namespace Project.Src.com.ab.mvcshop.Core.Mvc
+namespace com.ab.mvcshop.core.mvc
 {
     public interface IReactiveAmountModel : IAmountReadOnlyModel
     {

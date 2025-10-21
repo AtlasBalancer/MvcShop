@@ -1,9 +1,8 @@
 using R3;
 using Zenject;
 using UnityEngine;
-using com.ab.mvcshop.core.mvc;
 
-namespace Project.Src.com.ab.mvcshop.Core.Mvc
+namespace com.ab.mvcshop.core.mvc
 {
     public abstract class ViewController<TView> : IController, IInitializable where TView : BaseView
     {
@@ -21,11 +20,29 @@ namespace Project.Src.com.ab.mvcshop.Core.Mvc
             _root = root;
             Signals = signals;
             View = viewFactory.Create<TView>(viewAddressableKey);
+
+            Debug.Log("dd");
+
         }
 
-        public virtual void Initialize() => 
-            View.transform.SetParent(_root, false);
+        public virtual void Initialize()
+        {
+            View.Show(_root);
+            Show(View);
+        }
 
+        public virtual void Show(TView view)
+        {
+            Subscribe(Signals);
+            BindView(View);
+        }
+
+        public virtual void Hide(TView view)
+        {
+            Unsubscribe(Signals);
+            UnBindView(View);
+        }
+        
         public abstract void BindView(TView view);
         public virtual void UnBindView(TView view){}
 
