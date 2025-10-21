@@ -17,6 +17,9 @@ namespace com.ab.mvcshop.core.command
             foreach (var item in executions)
             {
                 var cost = item.GetCost(ctx);
+                if(cost == default)
+                    continue;
+                
                 var key = cost.GetType();
                 
                 if (Cost.ContainsKey(key))

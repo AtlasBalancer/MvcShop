@@ -47,9 +47,8 @@ namespace com.ab.mvcshop.modules.location
         [Serializable]
         public class Settings
         {
-            public int DefaultLocationValueToChange;
             public RectTransform PanelRoot;
-            public string ViewAddressKey = LocationAddressKey.LocationAmountPanel.ToString();
+            public string ViewAddressKey = LocationAddressKey.LocationPanel.ToString();
         }
     }
 }

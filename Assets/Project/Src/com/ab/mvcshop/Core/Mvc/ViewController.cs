@@ -20,8 +20,6 @@ namespace com.ab.mvcshop.core.mvc
             _root = root;
             Signals = signals;
             View = factory.Create<TView>(viewAddressableKey);
-
-            Debug.Log("dd");
         }
 
         public virtual void Initialize()

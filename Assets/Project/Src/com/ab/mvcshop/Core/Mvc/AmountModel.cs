@@ -1,10 +1,10 @@
 namespace com.ab.mvcshop.core.mvc
 {
-    public abstract class AmountModel : IModel
+    public abstract class AmountModel<T> : IModel
     {
-        public int Amount;
+        public T Amount;
 
-        public AmountModel(int amount) => 
+        public AmountModel(T amount) => 
             Amount = amount;
 
         public abstract void Combine(IModel model);
