@@ -10,7 +10,6 @@ namespace com.ab.mvcshop.modules.gold.interaction
 {
     public class GoldController : ViewController<GoldView>
     {
-        readonly GoldService service;
         readonly Settings _settings;
         readonly IGoldService _service;
 
@@ -23,18 +22,16 @@ namespace com.ab.mvcshop.modules.gold.interaction
         {
             _service = service;
             _settings = settings;
-
-            this.service = (GoldService)service;
         }
 
         public override void BindView(GoldView view)
         {
             view.IncreaseAmount.onClick.AddListener(OnChangeAmountExternal);
             
-            View.UpdateAmount(_service.Amount);
-            _service.AmountChanged
+            _service.ModelChanged
+                .Select(item => item.Amount)
                 .DistinctUntilChanged()
-                .Subscribe(view.UpdateAmount)
+                .Subscribe( view.UpdateAmount)
                 .AddTo(Disposables);
         }
 
