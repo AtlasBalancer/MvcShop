@@ -119,6 +119,56 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &454234201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 454234202}
+  - component: {fileID: 454234203}
+  m_Layer: 0
+  m_Name: LocationInstaller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &454234202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454234201}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1782896955}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &454234203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 454234201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fb95707ea944ece9345eca3f337cd8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: com.ab.mvcshop.location::com.ab.mvcshop.modules.location.LocationInstaller
+  _settings:
+    Default:
+      OverrideModel: 0
+    Controller:
+      PanelRoot: {fileID: 0}
+      ViewAddressKey: LocationAmountPanel
 --- !u!1 &504925986
 GameObject:
   m_ObjectHideFlags: 0
@@ -319,7 +369,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1075573756}
-  - {fileID: 1444922586}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &683551679
@@ -407,6 +456,7 @@ Transform:
   m_Children:
   - {fileID: 556441863}
   - {fileID: 1782896955}
+  - {fileID: 1444922586}
   m_Father: {fileID: 645273552}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1075573757
@@ -427,6 +477,7 @@ MonoBehaviour:
   - {fileID: 1409751984}
   - {fileID: 683551681}
   - {fileID: 1759681887}
+  - {fileID: 454234203}
   _installerPrefabs: []
   _autoRun: 1
   OnPreInstall:
@@ -671,7 +722,7 @@ RectTransform:
   m_Children:
   - {fileID: 1986892657}
   - {fileID: 845288708474641473}
-  m_Father: {fileID: 645273552}
+  m_Father: {fileID: 1075573756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -764,6 +815,7 @@ Transform:
   - {fileID: 1409751983}
   - {fileID: 683551680}
   - {fileID: 1759681886}
+  - {fileID: 454234202}
   m_Father: {fileID: 1075573756}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1918543139

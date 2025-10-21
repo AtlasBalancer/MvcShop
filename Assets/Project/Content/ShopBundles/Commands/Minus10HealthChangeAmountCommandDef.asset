@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aaa55a12b45244cda944ce60aa0d7fac, type: 3}
   m_Name: Minus10HealthChangeAmountCommandDef
   m_EditorClassIdentifier: com.ab.mvcshop.health::com.ab.mvcshop.modules.health.interacton.HealthChangeAmountCommandSo
-  ValueToChange: 0
+  ValueToChange: -10
