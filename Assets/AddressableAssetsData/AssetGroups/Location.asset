@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Location
   m_GUID: 51908990574e319488e0efc939d904de
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: 1e3e1bee60334f749b9ec1f062637ab2
+    m_Address: LocationAmountPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ce215c525996b044b896265664fa492d, type: 2}
   m_SchemaSet:

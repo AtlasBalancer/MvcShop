@@ -15,14 +15,13 @@ namespace com.ab.mvcshop.core.mvc
             RectTransform root,
             SignalBus signals,
             string viewAddressableKey,
-            IViewFactory viewFactory)
+            IViewFactory factory)
         {
             _root = root;
             Signals = signals;
-            View = viewFactory.Create<TView>(viewAddressableKey);
+            View = factory.Create<TView>(viewAddressableKey);
 
             Debug.Log("dd");
-
         }
 
         public virtual void Initialize()

@@ -4,10 +4,15 @@ using Zenject;
 
 namespace com.ab.mvcshop.modules.location
 {
-    public class LocationInstaller : MonoInstaller
+   public class LocationInstaller : MonoInstaller
     {
         public Settings _settings;
 
+        // location.data.forest 
+        // location.data.dungeon
+        // location.data.town
+        // location.data.toxicruins
+        
         public override void InstallBindings()
         {
             DevProfile();

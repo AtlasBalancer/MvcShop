@@ -42,6 +42,26 @@ MonoBehaviour:
     m_Localized: Health for gold
     m_Metadata:
       m_Items: []
+  - m_Id: 453378015469568
+    m_Localized: 'Location:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 454309037711360
+    m_Localized: Forest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 454448284409856
+    m_Localized: Dungeon
+    m_Metadata:
+      m_Items: []
+  - m_Id: 454530060754944
+    m_Localized: Town
+    m_Metadata:
+      m_Items: []
+  - m_Id: 454630715662336
+    m_Localized: Toxic ruins
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

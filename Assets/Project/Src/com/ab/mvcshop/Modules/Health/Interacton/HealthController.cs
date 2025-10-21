@@ -1,10 +1,10 @@
+using R3;
 using System;
+using Zenject;
+using UnityEngine;
 using com.ab.mvcshop.core.mvc;
 using com.ab.mvcshop.modules.health.model;
 using com.ab.mvcshop.modules.health.signals;
-using R3;
-using UnityEngine;
-using Zenject;
 
 namespace com.ab.mvcshop.modules.health.interacton
 {

@@ -165,9 +165,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: com.ab.mvcshop.location::com.ab.mvcshop.modules.location.LocationInstaller
   _settings:
     Default:
-      OverrideModel: 0
+      Model:
+        Title: "\u0413\u043E\u0440\u043E\u0434"
+      OverrideModel: 1
     Controller:
-      PanelRoot: {fileID: 0}
+      DefaultLocationValueToChange: 0
+      PanelRoot: {fileID: 845288708474641473}
       ViewAddressKey: LocationAmountPanel
 --- !u!1 &504925986
 GameObject:
