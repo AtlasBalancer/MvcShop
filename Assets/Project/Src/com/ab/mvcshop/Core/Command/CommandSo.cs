@@ -1,3 +1,4 @@
+using com.ab.mvcshop.core.mvc;
 using UnityEngine;
 
 namespace com.ab.mvcshop.core.command
@@ -7,8 +8,7 @@ namespace com.ab.mvcshop.core.command
     /// </summary>
     public abstract class CommandSo : ScriptableObject, ICommand
     {
-        public virtual bool CanExecute(CommandContext ctx) => 
-            true;
+        public virtual IModel GetCost(CommandContext ctx) => default;
 
         public virtual void Execute(CommandContext ctx) { }
     }
