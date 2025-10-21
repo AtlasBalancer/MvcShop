@@ -1,8 +1,8 @@
 using UnityEngine;
 using com.ab.mvcshop.core.command;
 using com.ab.mvcshop.core.mvc;
-using com.ab.mvcshop.modules.gold.definition;
 using com.ab.mvcshop.modules.gold.model;
+using com.ab.mvcshop.modules.gold.signals;
 
 namespace com.ab.mvcshop.Modules.gold.definition
 {

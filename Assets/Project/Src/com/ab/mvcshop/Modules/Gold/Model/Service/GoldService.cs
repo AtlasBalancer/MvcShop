@@ -50,9 +50,6 @@ namespace com.ab.mvcshop.modules.gold.model
             _persistent.CommitAsync(_model);
         }
 
-        public bool CanExecute(CommandContext ctx, Gold model) =>
-            _model.Value.Amount >= model.Amount;
-
         public bool CanExecute(CommandContext ctx, IModel model)
         {
             var gold = (Gold)model;

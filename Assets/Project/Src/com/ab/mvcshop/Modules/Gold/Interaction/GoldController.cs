@@ -4,7 +4,7 @@ using Zenject;
 using UnityEngine;
 using com.ab.mvcshop.core.mvc;
 using com.ab.mvcshop.modules.gold.model;
-using com.ab.mvcshop.modules.gold.definition;
+using com.ab.mvcshop.modules.gold.signals;
 
 namespace com.ab.mvcshop.modules.gold.interaction
 {
@@ -18,7 +18,7 @@ namespace com.ab.mvcshop.modules.gold.interaction
             Settings settings,
             IGoldService service,
             IViewFactory factory)
-            : base(settings.GoldPanelRoot, signals, settings.ViewAddressKey, factory)
+            : base(settings.PanelRoot, signals, settings.ViewAddressKey, factory)
         {
             _service = service;
             _settings = settings;
@@ -60,9 +60,8 @@ namespace com.ab.mvcshop.modules.gold.interaction
         [Serializable]
         public class Settings
         {
+            public RectTransform PanelRoot;
             public int IncreaseAmountValueToChange;
-            public RectTransform GoldPanelRoot;
-            public const string GOLD_PANEL_ROOT_KEY = "GoldPanelRoot";
             public string ViewAddressKey = GoldAddressKey.GoldAmountPanel.ToString();
         }
     }

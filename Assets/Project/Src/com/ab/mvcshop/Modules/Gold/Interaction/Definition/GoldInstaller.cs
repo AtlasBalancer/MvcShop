@@ -4,6 +4,7 @@ using UnityEngine;
 using com.ab.mvcshop.core.playerdata;
 using com.ab.mvcshop.modules.gold.model;
 using com.ab.mvcshop.modules.gold.interaction;
+using com.ab.mvcshop.modules.gold.signals;
 
 namespace com.ab.mvcshop.modules.gold.definition
 {
@@ -16,7 +17,7 @@ namespace com.ab.mvcshop.modules.gold.definition
             DevProfile();
 
             Container.BindInterfacesAndSelfTo<GoldController>().AsSingle().NonLazy();
-            Container.BindInstance(_settings.GoldController).AsSingle();
+            Container.BindInstance(_settings.Controller).AsSingle();
             Container.Bind<IGoldService>().To<GoldService>().AsSingle();
             Container.DeclareSignal<GoldChangeAmountSignal>();
         }
@@ -36,7 +37,7 @@ namespace com.ab.mvcshop.modules.gold.definition
         public class Settings
         {
             public MockData Default;
-            public GoldController.Settings GoldController;
+            public GoldController.Settings Controller;
         }
 
         [Serializable]

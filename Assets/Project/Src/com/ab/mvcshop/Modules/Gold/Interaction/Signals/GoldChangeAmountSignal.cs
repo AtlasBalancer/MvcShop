@@ -1,4 +1,4 @@
-namespace com.ab.mvcshop.modules.gold.definition
+namespace com.ab.mvcshop.modules.gold.signals
 {
     public class GoldChangeAmountSignal
     {
