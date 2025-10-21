@@ -62,6 +62,22 @@ MonoBehaviour:
     m_Localized: Toxic ruins
     m_Metadata:
       m_Items: []
+  - m_Id: 483696323829760
+    m_Localized: 'Vip:'
+    m_Metadata:
+      m_Items: []
+  - m_Id: 520385813520384
+    m_Localized: "Gold for vip\t"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 527141528641536
+    m_Localized: You pay 10 gold +Town +Vip
+    m_Metadata:
+      m_Items: []
+  - m_Id: 527766630932480
+    m_Localized: You pay 10 gold +Forest +Vip
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

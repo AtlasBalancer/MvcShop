@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: bundle.button.buy
     m_Metadata:
       m_Items: []
+  - m_Id: 520385813520384
+    m_Key: bundle.message.goldforvip
+    m_Metadata:
+      m_Items: []
   - m_Id: 276832533323776
     m_Key: bundle.message.goldforhealth
     m_Metadata:
@@ -57,6 +61,18 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 454630715662336
     m_Key: location.data.toxicruins
+    m_Metadata:
+      m_Items: []
+  - m_Id: 483696323829760
+    m_Key: shop.vip.label
+    m_Metadata:
+      m_Items: []
+  - m_Id: 527141528641536
+    m_Key: bundle.message.gotoforest
+    m_Metadata:
+      m_Items: []
+  - m_Id: 527766630932480
+    m_Key: bundle.message.gototown
     m_Metadata:
       m_Items: []
   m_Metadata:

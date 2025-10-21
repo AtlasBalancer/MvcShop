@@ -14,7 +14,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: Unity.Addressables.Editor::UnityEditor.AddressableAssets.Settings.AddressableAssetGroup
   m_GroupName: Vip
   m_GUID: 52a7fca3c2f85544db24734a13f5eeb0
-  m_SerializeEntries: []
+  m_SerializeEntries:
+  - m_GUID: cd0c7d5c517fa8547b1e4f0cb28d3a8f
+    m_Address: VipPanel
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ce215c525996b044b896265664fa492d, type: 2}
   m_SchemaSet:
