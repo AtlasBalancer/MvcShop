@@ -1,9 +1,9 @@
 using System;
-using com.ab.mvcshop.core.command;
-using com.ab.mvcshop.core.mvc;
-using com.ab.mvcshop.modules.vip.interaction.Signals;
-using com.ab.mvcshop.modules.vip.model;
 using UnityEngine;
+using com.ab.mvcshop.core.mvc;
+using com.ab.mvcshop.core.command;
+using com.ab.mvcshop.modules.vip.model;
+using com.ab.mvcshop.modules.vip.interaction.Signals;
 
 namespace com.ab.mvcshop.modules.vip.Interaction
 {

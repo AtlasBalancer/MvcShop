@@ -42,10 +42,8 @@ namespace com.ab.mvcshop.modules.shop.definition
             _settings.GoToShop.onClick.AddListener(OnGoToShop);
         }
 
-        void OnGoToShop()
-        {
+        void OnGoToShop() => 
             _sceneLoader.LoadAsync(_settings.ShopScene);
-        }
 
         void CreateBundle()
         {
@@ -87,14 +85,6 @@ namespace com.ab.mvcshop.modules.shop.definition
         {
             var bundle = _bundlesPresenter.GetBundle(bundleId);
             _service.BuyBundle(bundle);
-        }
-
-        public override void Subscribe(SignalBus signals)
-        {
-        }
-
-        public override void Unsubscribe(SignalBus signals)
-        {
         }
 
         [Serializable]

@@ -1,10 +1,9 @@
-using com.ab.mvcshop.core.command;
-using com.ab.mvcshop.core.mvc;
 using UnityEngine;
+using com.ab.mvcshop.core.mvc;
+using com.ab.mvcshop.core.command;
 
 namespace com.ab.mvcshop.modules.location
 {
-    
     [CreateAssetMenu (fileName = "$NAME$LocationChangeCommandDef",menuName = "Commands/Location change")]
     public class LocationChangeCommandSo : CommandSo
     {

@@ -7,23 +7,20 @@ namespace com.ab.mvcshop.modules.location
 {
     public class LocationPanelView : BaseView
     {
-        public AdvancedDropdown DropDown;
-
         public Button ChangeButton;
-        public Animator ChangeButtonAnimator;
-
         public TMP_Text CurrentLocation;
+        public AdvancedDropdown DropDown;
+        public Animator ChangeButtonAnimator;
+        
+        const string NORMAL_ANIMATION = "Normal";
 
-        public void ActiveChoseLocation(bool active) => 
+        public void ActiveChoseLocation(bool active) =>
             DropDown.transform.localScale = active ? Vector3.one : Vector3.zero;
-
-        public void ActiveButton(bool active) =>
-            ChangeButton.gameObject.SetActive(active);
 
         public void ActiveDropDown()
         {
             ChangeButton.interactable = false;
-            ChangeButtonAnimator.SetTrigger("Normal");
+            ChangeButtonAnimator.SetTrigger(NORMAL_ANIMATION);
 
             ActiveChoseLocation(true);
             DropDown.OpenOptions();

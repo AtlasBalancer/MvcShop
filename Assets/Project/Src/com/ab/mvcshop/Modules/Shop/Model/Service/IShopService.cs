@@ -1,5 +1,5 @@
-using System.Collections.Generic;
 using R3;
+using System.Collections.Generic;
 
 namespace com.ab.mvcshop.modules.shop.model
 {

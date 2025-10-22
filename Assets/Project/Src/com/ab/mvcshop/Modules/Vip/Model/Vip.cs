@@ -11,9 +11,7 @@ namespace com.ab.mvcshop.modules.vip.model
         public Vip(TimeSpan amount) : base(amount) => 
             Amount = amount;
 
-        public override void Combine(IModel model)
-        {
+        public override void Combine(IModel model) => 
             Amount += ((Vip)model).Amount;
-        }
     }
 }

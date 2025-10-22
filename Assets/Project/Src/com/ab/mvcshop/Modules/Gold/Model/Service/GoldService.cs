@@ -1,4 +1,3 @@
-using R3;
 using Rx = R3;
 using com.ab.mvcshop.core.command;
 using com.ab.mvcshop.core.mvc;
@@ -11,7 +10,7 @@ namespace com.ab.mvcshop.modules.gold.model
         readonly IPlayerDataService _persistent;
         readonly INotifyModelService _notifyModel;
 
-        readonly BehaviorSubject<Gold> _model;
+        readonly Rx.BehaviorSubject<Gold> _model;
         public Rx.Observable<Gold> ModelChanged => _model;
 
         public GoldService(
@@ -23,7 +22,7 @@ namespace com.ab.mvcshop.modules.gold.model
             _persistent = persistent;
             _persistent.Init<Gold>();
             Gold persistRef = _persistent.Get<Gold>();
-            _model = new BehaviorSubject<Gold>(persistRef);
+            _model = new Rx.BehaviorSubject<Gold>(persistRef);
 
             commandInvoker.Registry(typeof(Gold), this);
         }

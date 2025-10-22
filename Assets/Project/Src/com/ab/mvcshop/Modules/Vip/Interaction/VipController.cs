@@ -1,10 +1,10 @@
-using System;
-using com.ab.mvcshop.core.mvc;
-using com.ab.mvcshop.modules.vip.interaction.Signals;
-using com.ab.mvcshop.modules.vip.model;
 using R3;
-using UnityEngine;
+using System;
 using Zenject;
+using UnityEngine;
+using com.ab.mvcshop.core.mvc;
+using com.ab.mvcshop.modules.vip.model;
+using com.ab.mvcshop.modules.vip.interaction.Signals;
 
 namespace com.ab.mvcshop.modules.vip.interaction
 {

@@ -1,8 +1,8 @@
 using System;
-using com.ab.mvcshop.core.playerdata;
-using com.ab.mvcshop.modules.vip.interaction.Signals;
-using com.ab.mvcshop.modules.vip.model;
 using Zenject;
+using com.ab.mvcshop.core.playerdata;
+using com.ab.mvcshop.modules.vip.model;
+using com.ab.mvcshop.modules.vip.interaction.Signals;
 
 namespace com.ab.mvcshop.modules.vip.interaction
 {

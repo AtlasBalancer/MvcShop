@@ -87,7 +87,10 @@ namespace com.ab.mvcshop.modules.shop
         {
             foreach (var item in _service.GetBundles())
             {
-                var bundle = _factory.Create<BundleView>(_settings.BundleViewAddressKey, View.BundlesRoot);
+                var bundle = _factory.Create<BundleView>(
+                    _settings.BundleViewAddressKey, 
+                    View.BundlesRoot);
+                
                 bundle.SetUp(item);
                 _bundlesPresenter.Add(item, bundle);
             }
