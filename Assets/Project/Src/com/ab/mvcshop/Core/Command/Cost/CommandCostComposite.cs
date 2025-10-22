@@ -1,12 +1,12 @@
 using System;
-using System.Collections.Generic;
 using com.ab.mvcshop.core.mvc;
+using System.Collections.Generic;
 
 namespace com.ab.mvcshop.core.command
 {
     public class CommandCostComposite : ICommandCost
     {
-        public Dictionary<Type, IModel> Cost { get; private set; }
+        public Dictionary<Type, IModel> Cost { get; }
         public readonly List<ICommand> Executions;
 
         public CommandCostComposite(CommandContext ctx, List<ICommand> executions)

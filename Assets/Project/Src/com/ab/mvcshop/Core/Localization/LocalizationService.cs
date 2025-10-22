@@ -6,9 +6,7 @@ namespace com.ab.mvcshop.core.localization
 {
     public class LocalizationService : ILocalizationService
     {
-        public const string ADDRESABLE_SUFIX = "Language.";
         public const string TABLE_REFERENCE = "Ui";
-
         public const string defaultLocaleCode = "en";
 
         public LocalizationService() =>

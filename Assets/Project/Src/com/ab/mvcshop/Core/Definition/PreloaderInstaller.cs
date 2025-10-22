@@ -1,6 +1,6 @@
 using System;
-using com.ab.mvcshop.core.playerdata;
 using Zenject;
+using com.ab.mvcshop.core.playerdata;
 
 namespace com.ab.mvcshop.core.definition
 {
