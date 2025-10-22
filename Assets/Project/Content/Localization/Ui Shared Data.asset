@@ -75,6 +75,10 @@ MonoBehaviour:
     m_Key: bundle.message.gototown
     m_Metadata:
       m_Items: []
+  - m_Id: 648056987951104
+    m_Key: button.backtoshop
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

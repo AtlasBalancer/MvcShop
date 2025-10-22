@@ -5,6 +5,8 @@ namespace com.ab.mvcshop.modules.location
 {
     public interface ILocationService : INotifyModelChanged<Location>, ICommandCanExecute
     {
+        string Title { get; }
+        
         void ChangeAmount(string valueToChange);
     }
 }

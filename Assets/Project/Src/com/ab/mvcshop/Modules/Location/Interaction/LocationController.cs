@@ -27,7 +27,7 @@ namespace com.ab.mvcshop.modules.location
             _service.ModelChanged
                 .Select(item => item.Title)
                 .DistinctUntilChanged()
-                .Subscribe(view.UpdateLocation)
+                .Subscribe(_ => view.UpdateLocation(_service.Title))
                 .AddTo(Disposables);
         }
 

@@ -1,4 +1,5 @@
 using com.ab.mvcshop.core.command;
+using com.ab.mvcshop.core.localization;
 using com.ab.mvcshop.core.mvc;
 using com.ab.mvcshop.core.playerdata;
 using Rx = R3;
@@ -10,6 +11,7 @@ namespace com.ab.mvcshop.modules.location
     {
         readonly IPlayerDataService _persistent;
         readonly INotifyModelService _notifyModel;
+        readonly ILocalizationService _localization;
 
         readonly Rx.BehaviorSubject<Location> _model;
         public Rx.Observable<Location> ModelChanged => _model;
@@ -17,18 +19,23 @@ namespace com.ab.mvcshop.modules.location
         public LocationService(
             CommandInvoker commandInvoker,
             INotifyModelService notifyModel,
-            IPlayerDataService persistent)
+            IPlayerDataService persistent,
+            ILocalizationService localization)
         {
-            _notifyModel = notifyModel;
             _persistent = persistent;
+            _notifyModel = notifyModel;
+            _localization = localization;
             _persistent.Init<Location>();
+            
             Location persistRef = _persistent.Get<Location>();
             _model = new Rx.BehaviorSubject<Location>(persistRef);
 
             commandInvoker.Registry(typeof(Location), this);
         }
         
-        public string Title
+        public string Title => _localization.GetString(_model.Value.Title);
+
+        public string TitleLk
         {
             get => _model.Value.Title;
             private set

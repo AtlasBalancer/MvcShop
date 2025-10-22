@@ -71,11 +71,15 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 527141528641536
-    m_Localized: You pay 10 gold +Town +Vip
+    m_Localized: You pay 10 gold +Town +Vip for Go to forest
     m_Metadata:
       m_Items: []
   - m_Id: 527766630932480
-    m_Localized: You pay 10 gold +Forest +Vip
+    m_Localized: You pay 10 gold +Forest +Vip for Go to town
+    m_Metadata:
+      m_Items: []
+  - m_Id: 648056987951104
+    m_Localized: Back to shop
     m_Metadata:
       m_Items: []
   references:

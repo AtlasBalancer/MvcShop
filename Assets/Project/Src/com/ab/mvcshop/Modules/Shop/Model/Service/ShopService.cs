@@ -61,6 +61,17 @@ namespace com.ab.mvcshop.modules.shop.model
             _command.Execute(bundle.Results.Executions);
         }
 
+        public Bundle GetBundle(int bundleID)
+        {
+            foreach (var item in _bundles)
+            {
+                if (item.Id == bundleID)
+                    return item;
+            }
+
+            throw new ArgumentException($"{nameof(ShopService)}::{nameof(GetBundle)}:Can not find {bundleID}");
+        }
+
         public List<Bundle> GetBundles() =>
             _bundles;
 

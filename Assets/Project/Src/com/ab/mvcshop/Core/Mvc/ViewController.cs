@@ -43,8 +43,8 @@ namespace com.ab.mvcshop.core.mvc
         public abstract void BindView(TView view);
         public virtual void UnBindView(TView view){}
 
-        public abstract void Subscribe(SignalBus signals);
-        public abstract void Unsubscribe(SignalBus signals);
+        public virtual void Subscribe(SignalBus signals){}
+        public virtual void Unsubscribe(SignalBus signals){}
 
         public void Dispose()
         {

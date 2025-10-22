@@ -7,16 +7,13 @@ namespace com.ab.mvcshop.modules.shop
 {
     public class BundleView : BaseView
     {
-        public TMP_Text Description;
         public Button Buy;
+        public Button Info;
+        public TMP_Text Description;
         public TMP_Text NotEnoughResource;
-        int _id;
 
-        public void SetUp(Bundle item)
-        {
-            _id = item.Id;
+        public void SetUp(Bundle item) => 
             Description.SetText(item.Message);
-        }
 
         public void BuyAvailable(bool canExecute)
         {
