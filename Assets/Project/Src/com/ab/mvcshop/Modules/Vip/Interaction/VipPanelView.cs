@@ -5,7 +5,7 @@ using UnityEngine;
 
 namespace com.ab.mvcshop.modules.vip.interaction
 {
-    public class VipPanelView : BaseView
+    public class VipPanelView : AmountView
     {
         public TMP_Text Time;
 

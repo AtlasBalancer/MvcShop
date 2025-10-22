@@ -73,7 +73,6 @@ namespace com.ab.mvcshop.modules.shop
 
         public void OnInfoClick(int bundleId)
         {
-            // var bundle = _bundlesPresenter.GetBundle(bundleId);
             _payLoad.UpdateBundleId(bundleId);
             _sceneLoader.LoadAsync(_settings.InfoSceneName);
         }

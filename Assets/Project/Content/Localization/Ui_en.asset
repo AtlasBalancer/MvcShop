@@ -82,6 +82,10 @@ MonoBehaviour:
     m_Localized: Back to shop
     m_Metadata:
       m_Items: []
+  - m_Id: 721214638104576
+    m_Localized: Select the location
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

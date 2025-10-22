@@ -8,19 +8,16 @@ namespace com.ab.mvcshop.modules.location
     {
         public Settings _settings;
 
-        // location.data.forest 
-        // location.data.dungeon
-        // location.data.town
-        // location.data.toxicruins
-        
         public override void InstallBindings()
         {
             DevProfile();
 
             Container.BindInterfacesAndSelfTo<LocationController>().AsSingle().NonLazy();
             Container.BindInstance(_settings.Controller).AsSingle();
-            Container.Bind<ILocationService>().To<LocationService>().AsSingle();
             Container.DeclareSignal<LocationChangeSignal>();
+            
+            Container.Bind<ILocationService>().To<LocationService>().AsSingle();
+            Container.BindInstance(_settings.Service);
         }
 
         void DevProfile()
@@ -38,7 +35,13 @@ namespace com.ab.mvcshop.modules.location
         public class Settings
         {
             public MockData Default;
+            public LocationService.Settings Service;
             public LocationController.Settings Controller;
+            
+            // location.data.forest 
+            // location.data.dungeon
+            // location.data.town
+            // location.data.toxicruins
         }
 
         [Serializable]

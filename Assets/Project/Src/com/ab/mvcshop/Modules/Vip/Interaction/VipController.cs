@@ -20,18 +20,24 @@ namespace com.ab.mvcshop.modules.vip.interaction
             IViewFactory factory)
             : base(settings.PanelRoot, signals, settings.ViewAddressKey, factory)
         {
-            _service = service;
             _settings = settings;
+            _service = service;
         }
 
         public override void BindView(VipPanelView view)
         {
+            view.IncreaseAmount.onClick.AddListener(OnChangeAmountExternal);
+
             _service.ModelChanged
                 .Select(item => item.Amount)
                 .DistinctUntilChanged()
                 .Subscribe(view.UpdateTime)
                 .AddTo(Disposables);
         }
+
+        public void OnChangeAmountExternal() =>
+            OnChangeAmount(new VipChangeSignal(
+                TimeSpan.FromSeconds(_settings.IncreaseSecondsToChange)));
 
         public override void Subscribe(SignalBus signals) =>
             Signals.Subscribe<VipChangeSignal>(OnChangeAmount);
@@ -49,6 +55,7 @@ namespace com.ab.mvcshop.modules.vip.interaction
         [Serializable]
         public class Settings
         {
+            public int IncreaseSecondsToChange;
             public RectTransform PanelRoot;
             public string ViewAddressKey = VipAddressKey.VipPanel.ToString();
         }

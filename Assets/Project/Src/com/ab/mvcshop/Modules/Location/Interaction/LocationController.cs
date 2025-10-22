@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using com.ab.mvcshop.core.mvc;
 using R3;
 using UnityEngine;
@@ -20,7 +21,21 @@ namespace com.ab.mvcshop.modules.location
         {
             _service = service;
             _settings = settings;
+
+            View.SetUp();
+            CreateLocationOptions();
         }
+
+        void CreateLocationOptions()
+        {
+            View.DropDown.DeleteAllOptions();
+            foreach (var item in _service.LocationLocalizedOptions) 
+                View.DropDown.AddOptions(item);
+            View.DropDown.onChangedValue += OnChoseOption;
+        }
+
+        void OnChoseOption(int index) => 
+            _service.ChangeAmount(index);
 
         public override void BindView(LocationPanelView view)
         {

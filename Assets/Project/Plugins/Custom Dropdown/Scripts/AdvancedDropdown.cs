@@ -97,7 +97,7 @@ public class AdvancedDropdown : MonoBehaviour{
         if(value != -1) {
             SelectOption(value);
         } else {
-            SetDefaultText();
+            // SetDefaultText();
         }
         optionCanvasGroup = optionsObject.GetComponent<CanvasGroup>();
     }

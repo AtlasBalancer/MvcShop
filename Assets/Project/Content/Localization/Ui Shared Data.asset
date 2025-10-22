@@ -79,6 +79,10 @@ MonoBehaviour:
     m_Key: button.backtoshop
     m_Metadata:
       m_Items: []
+  - m_Id: 721214638104576
+    m_Key: dropdown.selectvalue
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

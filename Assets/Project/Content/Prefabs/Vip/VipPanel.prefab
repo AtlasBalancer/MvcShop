@@ -147,6 +147,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+--- !u!114 &4022707547954810325 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5218680250868414937, guid: 8d628df759504bd4289c1e9d617f2f11, type: 3}
+  m_PrefabInstance: {fileID: 9205354590168069132}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6219161965417377588 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3022227478915062584, guid: 8d628df759504bd4289c1e9d617f2f11, type: 3}
@@ -164,4 +175,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a4df9f5f43c448b4a411240450506831, type: 3}
   m_Name: 
   m_EditorClassIdentifier: com.ab.mvcshop.vip::com.ab.mvcshop.modules.vip.interaction.VipPanelView
+  Amount: {fileID: 0}
+  IncreaseAmount: {fileID: 4022707547954810325}
   Time: {fileID: 1635980625528260784}
