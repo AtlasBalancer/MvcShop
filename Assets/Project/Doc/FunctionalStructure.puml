@@ -9,7 +9,8 @@ package "Core" as Core {
   [Command] as command
   [MVC] as mvc
   [PlayerData] as pd
-  [Network] as net
+  [Localization] as local
+  [SceneTransition] as st
 }
 
 package "Gold" as Gold
@@ -43,8 +44,15 @@ note right of pd
  - имплементация Мock через PlayerPrefs
 end note
 
-note right of net
-Модуль комутации и синхронизации через интернет 
+note right of local
+Обертка на Unity Localization инциализирует локаль
+Встраивает локализацию в жизненный цикл приложения 
+end note
+
+note right of st
+Модуль для переключения сцен и показа шторки
+ - имплеменатция ZenjectSceneLoader
+ - имплементация Preloader через canvas render mode Overlay
 end note
 
 @enduml
