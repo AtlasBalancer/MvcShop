@@ -79,6 +79,9 @@ providers = {
 objectSelectors = {
 }
 recentSearches = [
+	"st: dropdown.selectvalue"
+	"st: button.backtoshop"
+	"st: shop.location.label"
 	"st: bundle.lable.notenoughtresources"
 ]
 searchItemFavorites = [
