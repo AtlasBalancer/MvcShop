@@ -1,0 +1,103 @@
+# --- Unity core ---
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+[Uu]serSettings/          # личные настройки редактора
+SysInfo.txt
+*.stacktrace
+
+# Кэш пакетов/адресуемых ассетов
+[Aa]sset[Bb]undles/
+Assets/StreamingAssets/aa/*
+Assets/StreamingAssets/AssetBundles/*
+
+# Кеш Rider/VS
+.vs/
+*.csproj
+*.sln
+*.suo
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+
+# --- JetBrains Rider / IntelliJ ---
+.idea/
+*.iml
+
+# --- VS Code (если вдруг используешь) ---
+.vscode/
+!.vscode/extensions.json    # можно оставить список рекомендуемых расширений
+!.vscode/settings.json      # оставь только если он общий для команды
+
+# --- OS мусор ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Unity Collaborate (если не используешь) ---
+.collab/
+
+# --- Кэшируемые/временные/отчёты ---
+*.log
+*.bak
+*.tmp
+*.temp
+[Uu]nity[Cc]rash[Rr]eports/
+[Cc]rash[Rr]eports/
+
+# --- Addressables (построенные данные) ---
+Library/com.unity.addressables/
+# рабочие файлы Addressables в Assets обычно НУЖНО хранить:
+# Assets/AddressableAssetsData/**  <-- не игнорим
+
+# --- Rider/Resharper кеши ---
+.reSharper*/
+*_Resharper.*
+.idea/.idea.*
+.DS_Store?
+
+# --- Test Results (PlayMode/EditMode) ---
+TestResults/
+*.coverage
+*.coveragexml
+
+# --- Build tooling ---
+/Scripts/Generated/**
+/Generated/**
+/obj/**
+
+# --- Secrets (на всякий случай) ---
+.env
+*.key
+*.pem
+*.p12
+*.keystore
+
+# --- Unity Cloud & Plastic (если не используешь) ---
+/UnityCloud/
+PlasticSCM/
+
+# --- Android / iOS артефакты ---
+/*.apk
+/*.aab
+/*.ipa
+*.xcworkspace/
+*.xcuserdatad/
+*.xcscmblueprint
+Pods/
+DerivedData/
+
+# --- Gradle / CocoaPods ---
+.gradle/
+.build/
+
+# --- Nuget
+
+/Assets/Packages/
+/Assets/Packages/**

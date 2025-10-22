@@ -1,0 +1,58 @@
+@startuml
+title Функционалная структура
+skinparam componentStyle rectangle
+skinparam packageStyle rectangle
+left to right direction
+
+package "Core" as Core {
+  [AssetLoad] as al
+  [Command] as command
+  [MVC] as mvc
+  [PlayerData] as pd
+  [Localization] as local
+  [SceneTransition] as st
+}
+
+package "Gold" as Gold
+package "Health" as Health
+package "Location" as Location
+package "Vip" as Vip
+
+Gold ..> Core 
+Health ..> Core 
+Location ..> Core 
+Vip ..> Core 
+
+note right of al
+Модуль отвечает за загрузку ассетов:
+- имплементация через локал Addressables
+end note
+
+note right of command
+Модуль для кастомизации контента:
+ - имплементация через ScriptableObject 
+end note
+
+note right of mvc
+Модуль определющий протокол взаимодействия
+доменов с внешними системами
+ - имплеменатция класический MVC с плоской View
+end note 
+
+note right of pd
+Модуль хранения данных
+ - имплементация Мock через PlayerPrefs
+end note
+
+note right of local
+Обертка на Unity Localization инциализирует локаль
+Встраивает локализацию в жизненный цикл приложения 
+end note
+
+note right of st
+Модуль для переключения сцен и показа шторки
+ - имплеменатция ZenjectSceneLoader
+ - имплементация Preloader через canvas render mode Overlay
+end note
+
+@enduml
