@@ -18,7 +18,7 @@ namespace com.ab.mvcshop.core.definition
             DevProfile();
 
             SignalBusInstaller.Install(Container);
-
+            
             Container.BindInstance(_settings).WithId(Settings.UI_ROOT_DI_KEY).AsSingle();
             Container.Bind<IAddressableService>().To<AddressableService>().AsSingle();
             Container.Bind<IViewFactory>().To<AddressableViewFactory>().AsSingle();
