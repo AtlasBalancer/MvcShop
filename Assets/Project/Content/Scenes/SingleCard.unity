@@ -301,6 +301,12 @@ MonoBehaviour:
       Model:
         Title: location.data.town
       OverrideModel: 1
+    Service:
+      Locations:
+      - location.data.town
+      - location.data.forest
+      - location.data.dungeon
+      - location.data.toxicruins
     Controller:
       PanelRoot: {fileID: 1898339932}
       ViewAddressKey: LocationPanel
@@ -926,7 +932,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: com.ab.mvcshop.shop::com.ab.mvcshop.modules.shop.definition.SingleBundleInstaller
   _settings:
-    ShopRoot: {fileID: 1444922586}
     Service:
       BundleList: {fileID: 11400000, guid: a32ae3a7a1b1c8c4e82492848f26e811, type: 2}
     Controller:
